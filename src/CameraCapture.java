@@ -8,6 +8,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 
@@ -39,7 +40,8 @@ public class CameraCapture {
 //        System.out.println(info.height);
 //        System.out.println(info.width);
 
-        int[] intArray = new int[data.pitches[0] / 4 *480];
+        //pitches[0] will contain the height of the image *4 Probably for RGBA spectrum
+        int[] intArray = new int[data.pitches[0] / 4 * height];
 
         data.ToIntArray(0, intArray);
 
@@ -48,12 +50,12 @@ public class CameraCapture {
 
         System.out.println(bImage.toString());
 
-//        File out = new File("test.jpg");
-//        try {
-//            ImageIO.write(bImage, "jpg", out);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        File out = new File("test.png");
+        try {
+            ImageIO.write(bImage, "png", out);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         senseManager.ReleaseFrame();
 
