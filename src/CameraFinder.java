@@ -29,6 +29,7 @@ public class CameraFinder {
                     break;
 
                 if (info.name.equals("Intel(R) RealSense(TM) 3D Camera R200")){
+                    System.out.println("Successfully found the RealSense R200 Camera");
                     return true;
                 }
             }

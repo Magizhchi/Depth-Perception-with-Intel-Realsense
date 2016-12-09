@@ -4,5 +4,7 @@ public class RealSense {
         if (!r200.checkR200Camera())
             System.exit(-1);
 
+        CameraCapture capture = new CameraCapture();
+        capture.captureImage("depth");
     }
 }
