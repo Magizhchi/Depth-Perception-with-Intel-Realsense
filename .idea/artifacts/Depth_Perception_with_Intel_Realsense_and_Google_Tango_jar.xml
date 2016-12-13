@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Depth-Perception-with-Intel-Realsense-and-Google-Tango:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Depth_Perception_with_Intel_Realsense_and_Google_Tango_jar</output-path>
+    <root id="archive" name="Depth-Perception-with-Intel-Realsense-and-Google-Tango.jar">
+      <element id="module-output" name="Depth-Perception-with-Intel-Realsense-and-Google-Tango" />
+      <element id="extracted-dir" path="C:/Program Files (x86)/Intel/RSSDK/framework/Java/DF_CameraViewer/libpxcclr.java.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

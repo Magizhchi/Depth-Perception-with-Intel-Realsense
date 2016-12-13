@@ -1,3 +1,4 @@
+package spikeFiles;
 
 import intel.rssdk.*;
 
@@ -43,7 +44,7 @@ public class RealSenseSpike {
 
         RealSenseSpike c_raw = new RealSenseSpike();
         DrawFrame c_df = new DrawFrame(640, 480);
-        JFrame cframe = new JFrame("Intel(R) RealSenseSpike(TM) SDK - Color Stream");
+        JFrame cframe = new JFrame("Intel(R) spikeFiles.RealSenseSpike(TM) SDK - Color Stream");
         cframe.addWindowListener(listener);
         cframe.setSize(640, 480);
         cframe.add(c_df);
@@ -51,7 +52,7 @@ public class RealSenseSpike {
 
         RealSenseSpike d_raw = new RealSenseSpike();
         DrawFrame d_df=new DrawFrame(dWidth, dHeight);
-        JFrame dframe= new JFrame("Intel(R) RealSenseSpike(TM) SDK - Depth Stream");
+        JFrame dframe= new JFrame("Intel(R) spikeFiles.RealSenseSpike(TM) SDK - Depth Stream");
         dframe.addWindowListener(listener);
         dframe.setSize(dWidth, dHeight);
         dframe.add(d_df);
@@ -59,7 +60,7 @@ public class RealSenseSpike {
 
         RealSenseSpike r_raw = new RealSenseSpike();
         DrawFrame r_df=new DrawFrame(rWidth, rHeight);
-        JFrame rframe= new JFrame("Intel(R) RealSenseSpike(TM) SDK - Right Stream");
+        JFrame rframe= new JFrame("Intel(R) spikeFiles.RealSenseSpike(TM) SDK - Right Stream");
         rframe.addWindowListener(listener);
         rframe.setSize(rWidth, rHeight);
         rframe.add(r_df);
@@ -67,7 +68,7 @@ public class RealSenseSpike {
 
         RealSenseSpike l_raw = new RealSenseSpike();
         DrawFrame l_df=new DrawFrame(lWidth, lHeight);
-        JFrame lframe= new JFrame("Intel(R) RealSenseSpike(TM) SDK - Left Stream");
+        JFrame lframe= new JFrame("Intel(R) spikeFiles.RealSenseSpike(TM) SDK - Left Stream");
         lframe.addWindowListener(listener);
         lframe.setSize(lWidth, lHeight);
         lframe.add(l_df);
